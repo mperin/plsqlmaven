@@ -260,8 +260,9 @@ public class PlSqlCompileMojo
            {
                log.info("compiling: "+it.file.getAbsolutePath()+"...")
             
-               def ddl= it.file.getText().replaceFirst("\n/", "")
-         
+               def ddl= it.file.getText()
+               ddl= ddl.substring(0,ddl.lastIndexOf("/"))
+              
                log.debug(ddl);
                
                sql.execute(ddl)
