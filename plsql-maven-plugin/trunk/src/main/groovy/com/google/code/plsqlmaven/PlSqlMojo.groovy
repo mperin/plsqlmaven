@@ -29,6 +29,8 @@ import groovy.sql.Sql
 public abstract class PlSqlMojo
     extends GroovyMojo
 {
+    public PLSQL_EXTENSION= '.pls';
+
     /**
      * Database username. 
      * @since 1.0
@@ -111,7 +113,7 @@ public abstract class PlSqlMojo
         
         plsqlFiles.setBasedir(dir);
         
-        plsqlFiles.setIncludes(["**/*.sql"] as String[]);
+        plsqlFiles.setIncludes(["**/*"+PLSQL_EXTENSION] as String[]);
         
         plsqlFiles.scan();
 

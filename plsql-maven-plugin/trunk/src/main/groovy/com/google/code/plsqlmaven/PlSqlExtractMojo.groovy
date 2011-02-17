@@ -89,7 +89,7 @@ public class PlSqlExtractMojo
                {
                    def name= it.name.toLowerCase();
                    log.info("    "+name)
-                   def target_file= new File(type_dir, name+".${ext}.sql")
+                   def target_file= new File(type_dir, name+".${ext}"+PLSQL_EXTENSION)
                    extract(it.name,type,target_file)
                }
             }
@@ -104,7 +104,7 @@ public class PlSqlExtractMojo
                      def name= it.name.toLowerCase();
                      log.info("    "+name)
                      def odir= get_dir(type_dir, name)
-                     def target_file= new File(odir, name+".${ext}.sql")
+                     def target_file= new File(odir, name+".${ext}"+PLSQL_EXTENSION)
                      extract(it.name,type,target_file)
                  }
                }
