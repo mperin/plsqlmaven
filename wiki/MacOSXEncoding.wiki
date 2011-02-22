@@ -12,7 +12,7 @@ This may be a problem for the plsql:gateway goal because you will see
 wrong characters in place of multi-bytes ones. 
 
 The only solution i found to this is to put -Dfile.encoding=UTF-8
-directly inside the my mvn script like this:
+directly inside the mvn script like this:
 
 {{{
 exec "$JAVACMD" \
