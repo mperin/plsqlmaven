@@ -25,6 +25,7 @@
 </settings>
 }}}
 
+* sample project
 
 {{{
 $ mvn archetype:generate -DarchetypeGroupId=com.google.code.plsqlmaven -DarchetypeArtifactId=plsql-package-archetype -DarchetypeVersion=1.0 -DartifactId=dummy -DgroupId=org.myorg
@@ -33,5 +34,5 @@ $ cd dummy
 
 $ mvn -Pmydb1 compile
 
-$ mvn help:describe -Dplugin=plsql
+$ mvn help:describe -Dplugin=plsql -Ddetail
 }}}
