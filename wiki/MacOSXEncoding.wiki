@@ -1,7 +1,5 @@
 #summary Strange encoding problem on Mac OS X
 
-= Introduction =
-
 There are strange problems on Mac OS due to the MacRoman
 charset used as java.nio.charset.Charset.defaultCharset
 
