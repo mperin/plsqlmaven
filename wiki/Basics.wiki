@@ -1,4 +1,6 @@
-* my ~/.m2/settings.xml
+* Maven docs http://maven.apache.org/index.html
+* a deep understanding of maven is usefull for your CV but not necessarly to build PL/SQL projects
+* my ~/.m2/settings.xml (on Windows is somenthing like C:\Users\Jonathan\.m2\settings.xml)
 {{{
 <settings>
   <profiles>
