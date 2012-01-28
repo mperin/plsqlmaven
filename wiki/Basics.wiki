@@ -25,7 +25,7 @@
 </settings>
 }}}
 
-* sample project
+* sample project (the plugin will be downloaded automatically from maven central repository if you configured pluginGroups as shown)
 
 {{{
 $ mvn archetype:generate -DarchetypeGroupId=com.google.code.plsqlmaven -DarchetypeArtifactId=plsql-package-archetype -DarchetypeVersion=1.0 -DartifactId=dummy -DgroupId=org.myorg
