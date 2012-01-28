@@ -1,0 +1,13 @@
+#summary How to develop PL/SQL webapps with maven
+
+  * create the directory for static resources inside you project
+{{{
+$ cd myproj
+$ mkdir src/main/webapp
+}}}
+  * start the PL/SQL gateway
+{{{
+$ mvn -Pmydb1 plsql:gateway
+}}}
+  * go to the URL it prints with your browser http://localhost:8080/myproj/pls/home and start your develop and refresh  cycle... 
+  * any file placed in the webapp directory eg. src/main/webapp/dummy.js is accessible from http://localhost:8080/myproj/dummy.js
