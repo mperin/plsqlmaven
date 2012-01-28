@@ -1,6 +1,7 @@
-* Maven docs http://maven.apache.org/index.html
-* a deep understanding of maven is usefull for your CV but not necessarly to build PL/SQL projects
-* my ~/.m2/settings.xml (on Windows is somenthing like C:\Users\Jonathan\.m2\settings.xml)
+
+  * Maven docs http://maven.apache.org/index.html
+  * a deep understanding of maven is usefull for your CV but not necessarly to build PL/SQL projects
+  * my ~/.m2/settings.xml (on Windows is somenthing like C:\Users\Jonathan\.m2\settings.xml)
 {{{
 <settings>
   <profiles>
@@ -27,7 +28,7 @@
 </settings>
 }}}
 
-* sample project (the plugin will be downloaded automatically from maven central repository if you configured pluginGroups as shown)
+  * sample project (the plugin will be downloaded automatically from maven central repository if you configured pluginGroups as shown)
 
 {{{
 $ mvn archetype:generate -DarchetypeGroupId=com.google.code.plsqlmaven -DarchetypeArtifactId=plsql-package-archetype -DarchetypeVersion=1.0 -DartifactId=dummy -DgroupId=org.myorg
@@ -41,14 +42,14 @@ or
 $ mvn help:describe -DgroupId=com.google.code.plsqlmaven -DartifactId=plsql-maven-plugin
 }}}
 
-* extract all plsql sources of a schema (not the best way to modularize your project)
+  * extract all plsql sources of a schema (not the best way to modularize your project)
 
 {{{
 $ mvn -Pmydb1 plsql:extract -Dforce
 }}}
 
 
-* extract a couple of objects
+  * extract a couple of objects
 
 {{{
 $ mvn -Pmydb1 plsql:extract -Dobjects=mypkg1,myproc2 -Dforce
