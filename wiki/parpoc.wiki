@@ -1,4 +1,4 @@
-#summary PAR (pl/sql archive) POC
+#summary PAR (pl/sql archive) Proof of concept
 
 = Introduction =
 
