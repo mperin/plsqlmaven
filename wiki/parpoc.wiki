@@ -17,7 +17,7 @@ The main idea is to have a jar containing a single par.sql
     packages, java classes, java sources, java resources, xdb files,
     and whatever.... (see http://erikwramner.wordpress.com/2010/02/23/coding-and-decoding-base64-in-plsql/ for zip handling in plsql)
 
-  * why: because you don't need any external tool to deploy it!
+  * why: because you don't need any external tool (loadjava for instance) to deploy it!
     you can do it by running the par.sql via sqlplus or via jdbc, 
     and then simply call: 
 {{{
