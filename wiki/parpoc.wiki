@@ -26,7 +26,7 @@ begin
 end;
 }}}
 
-  * par POC:
+  * self contained par POC:
 {{{
 create or replace package par_sample
 as
